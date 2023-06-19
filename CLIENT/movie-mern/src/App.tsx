@@ -7,7 +7,7 @@ import Gallery from "./components/gallery";
 import SideBar from "./components/sideBar";
 import MovieView from "./components/movieView";
 import Footer from "./components/footer";
-import Banner from "./components/banner";
+import Banner from "./components/Banner";
 import TopNav from "./components/topNav";
 
 export default function App() {
@@ -53,7 +53,7 @@ export default function App() {
           <Route
             path="/"
             element={
-              <MovieContext.Provider value={{ movies }}>
+              <MovieContext.Provider value={movies}>
                 <SideBar
                   query={query}
                   setQuery={setQuery}

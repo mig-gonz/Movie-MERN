@@ -1,12 +1,12 @@
 import { FaStar } from "react-icons/fa";
 
-export default function HeaderGenre({ movie }) {
+export default function HeaderGenre({ movie }: { movie: any }) {
   return (
     <div className="flex flex-col items-center justify-center">
       <div>
         <a href="#!" className="no-underline">
           <ul className="flex flex-wrap justify-center">
-            {movie?.genres?.map((genre) => (
+            {movie?.genres?.map((genre: any) => (
               <li
                 className={`px-2 py-1 mr-2 bg-secondary text-light rounded-md ${
                   movie?.genres?.length < 2 ? "mx-auto" : ""

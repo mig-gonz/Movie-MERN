@@ -1,8 +1,14 @@
 import "../index.css";
 import { FloatingLabel, Form, Row, Col } from "react-bootstrap";
 
-export default function SearchBar({ query, setQuery }) {
-  const handleInputChange = (event) => {
+export default function SearchBar({
+  query,
+  setQuery,
+}: {
+  query: any;
+  setQuery: any;
+}) {
+  const handleInputChange = (event: any) => {
     setQuery(event.target.value);
   };
 

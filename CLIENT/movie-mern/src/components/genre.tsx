@@ -1,4 +1,4 @@
-export default function GenreDisplay({ movie }) {
+export default function GenreDisplay({ movie }: { movie: any }) {
   return (
     <div className="card mb-4">
       <div className="card-header">Genres</div>

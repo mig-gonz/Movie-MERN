@@ -10,16 +10,21 @@ import MovieViewPoster from "./movieViewPoster";
 import HeaderGenre from "./headerGenre";
 
 export default function MovieView() {
-  const [movie, setMovie] = useState([]);
-  const [comment, setComment] = useState([]);
-  const [newComment, setNewComment] = useState("");
+  const [movie, setMovie] = useState<any>(null);
+  // const [comment, setComment] = useState<any>(null);
+  // const [newComment, setNewComment] = useState("");
   const { id } = useParams();
 
-  const dateOptions = {
+  type DateOptions = {
+    year?: "numeric" | "2-digit";
+    month?: "numeric" | "2-digit" | "short";
+    day?: "numeric" | "2-digit";
+  };
+
+  const dateOptions: DateOptions = {
     year: "numeric",
     month: "short",
     day: "numeric",
-    timeZone: "UTC",
   };
 
   useEffect(() => {
@@ -38,8 +43,6 @@ export default function MovieView() {
   //     setCommentById(movie.id);
   //   }
   // }, [movie]);
-
-
 
   return (
     <div>
@@ -94,10 +97,10 @@ export default function MovieView() {
         </div>
 
         <Comments
-          setNewComment={setNewComment}
-          setComment={setComment}
-          newComment={newComment}
-          comment={comment}
+        // setNewComment={setNewComment}
+        // setComment={setComment}
+        // newComment={newComment}
+        // comment={comment}
         />
       </div>
       <Footer />

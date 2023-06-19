@@ -8,7 +8,15 @@ import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
 
-export default function SideBar({ query, setQuery, setMovies }) {
+export default function SideBar({
+  query,
+  setQuery,
+  setMovies,
+}: {
+  query: any;
+  setQuery: any;
+  setMovies: any;
+}) {
   const [visibleCustomToolbar, setVisibleCustomToolbar] = useState(false);
 
   const API_KEY = `7b627fa55bf0652f8c45e9da6e8199d1`;
