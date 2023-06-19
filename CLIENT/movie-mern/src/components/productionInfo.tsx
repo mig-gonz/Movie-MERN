@@ -1,5 +1,5 @@
 export default function ProductionInfo({ movie }: { movie: any }) {
-  const convertRuntime = (num: any) => {
+  const convertRuntime = (num: number) => {
     let hours = num / 60;
     let rhours = Math.floor(hours);
     let minutes = (hours - rhours) * 60;

@@ -3,7 +3,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "../index.css";
 
-import React, { useState } from "react";
+import React, { useState, Dispatch, SetStateAction } from "react";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import { InputText } from "primereact/inputtext";
@@ -13,9 +13,9 @@ export default function SideBar({
   setQuery,
   setMovies,
 }: {
-  query: any;
-  setQuery: any;
-  setMovies: any;
+  query: string;
+  setQuery: Dispatch<SetStateAction<string>>;
+  setMovies: Dispatch<SetStateAction<[]>>;
 }) {
   const [visibleCustomToolbar, setVisibleCustomToolbar] = useState(false);
 

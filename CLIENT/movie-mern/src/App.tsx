@@ -12,8 +12,8 @@ import TopNav from "./components/topNav";
 
 export default function App() {
   // state variables
-  const [query, setQuery] = useState(""); // handles search input
-  const [movies, setMovies] = useState([]); // handles list of movies returned from api
+  const [query, setQuery] = useState<string>(""); // handles search input
+  const [movies, setMovies] = useState<[]>([]); // handles list of movies returned from api
   const [selectedMovie, setSelectedMovie] = useState([]); // handles banner display
 
   const API_URL = "https://api.themoviedb.org/3/search/movie?api_key=";
