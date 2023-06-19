@@ -1,3 +1,5 @@
+// <><> merge new-migration branch into main <><> //
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { MovieContext } from "./context/movieContext";
