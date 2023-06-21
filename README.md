@@ -8,15 +8,15 @@ This Project is our second milestone project for the UNLV development boot camp 
 
 A movie library app that allows users to search and discover all different types of movies and leave reviews.
 
+### App Description
+
+On the main home page, there is a navbar, a sidebar, and a gallery with gallery items. By default, the gallery displays popular movie images, titles, and release years. The navbar has the logo on each view. The sidebar has a search box where users can search different movie titles, and as they search, the gallery items update accordingly. Additionally, in the sidebar, there's a button for 'Popular Movies', 'Now Playing', 'Upcoming', and 'Top Rated'. There's a banner at the top that displays the first movie or search item. The banner and gallery items each have a view more section that, upon clicking, brings users to the MovieView component, which displays more details and information about the movie. At the bottom, there's a comment section that allows users to input their name and leave a comment or review on the movie.
+
 ### Features
 
 - Users can search for specific movie titles or browse by genre.
 - Users can leave reviews or ratings on specific movies.
 - A specific view for clicked movies with general information about the movie
-
-### App Description
-
-On the main home page, there is a navbar, a sidebar, and a gallery with gallery items. By default, the gallery displays popular movie images, titles, and release years. The navbar has the logo on each view. The sidebar has a search box where users can search different movie titles, and as they search, the gallery items update accordingly. Additionally, in the sidebar, there's a button for 'Popular Movies', 'Now Playing', 'Upcoming', and 'Top Rated'. There's a banner at the top that displays the first movie or search item. The banner and gallery items each have a view more section that, upon clicking, brings users to the MovieView component, which displays more details and information about the movie. At the bottom, there's a comment section that allows users to input their name and leave a comment or review on the movie.
 
 ## Backend
 
