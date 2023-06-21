@@ -138,7 +138,7 @@ DELETE /api/comments/:comment_id:
 - "typescript": "^5.1.3"
 - "web-vitals": "^2.1.4"
 
-After forking and cloning this application, please ensure that you have installed all the dependencies. Make sure you are in the root directory at the package.json level, then run:
+After forking and cloning this repo, please ensure that you have installed all the dependencies. Make sure you are in the root directory at the package.json level, then run:
 
 ```
 npm i
