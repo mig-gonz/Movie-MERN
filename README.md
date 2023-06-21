@@ -150,7 +150,7 @@ and finally:
 npm start
 ```
 
-Please note that although you can cd into the server directory and run:
+Please note that although you can navigate to the server directory and run:
 
 ```
 nodemon server.js
